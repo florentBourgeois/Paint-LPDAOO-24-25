@@ -40,5 +40,18 @@ public class Main {
         f = r;
         System.out.println(f.getPerimetre());
         //f.setLongueur(0);  // interdit, la forme ne sait pas faire setLongueur
+
+        System.out.println("----------------------\nPositions\n------------");
+        System.out.println(r.getX());
+        System.out.println(r.getY());
+        r.translate(5, 500);
+        System.out.println(r.getX());
+        System.out.println(r.getY());
+
+        r.setX(999);
+        System.out.println(r.getX());
+
+        Cercle c2 = new Cercle(5, 1,2);
+
     }
 }
