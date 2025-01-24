@@ -1,3 +1,7 @@
+/**
+ * Classe abstraite Forme   qui représente une forme géométrique
+ * toutes les formes ont une position x et y, un périmètre et une représentation en HTML Canvas et peuvent être déplacées
+ */
 public abstract class Forme {
 
     private int x = 10;

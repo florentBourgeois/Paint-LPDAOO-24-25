@@ -25,7 +25,7 @@ public class Rectangle extends Forme{
 
     @Override
     public String toString() {
-        return "Je suis un rectangle avec une longueur de : " + this.longueur + " et une largeur " + this.largeur + " le perimetre = " + this.getPerimetre();
+        return "Je suis un rectangle avec une longueur de : " + this.longueur + " et une largeur " + this.largeur + " le perimetre = " + this.getPerimetre() + "la position " + super.toString();
     }
 
 
