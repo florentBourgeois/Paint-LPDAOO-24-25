@@ -70,7 +70,8 @@ public class DessinHTMLer {
     }
 
     public static void main(String[] args) {
-        Dessin d = UtlisDrawGenerator.genereRandomDessin(10);
+        int nbFormes = 10;
+        Dessin d = UtlisDrawGenerator.genereRandomDessin(nbFormes);
         transformerDessinEnPageWeb(d);
     }
 
