@@ -8,17 +8,10 @@
         const canvas = document.getElementById("canvas");
         if (canvas.getContext) {
             const ctx = canvas.getContext("2d");
-
-            // draw a rectangle
-            ctx.fillRect(25, 25, 100, 100);
-
-            // Draw a circle
-            drawCircle(ctx, 150,300, 20, "red", "purple");
-
-            // draw Triangle
-            drawEquilateralTriangle(ctx, 200, 100, 100, "green", "black");
-
-        }
+            drawEquilateralTriangle(ctx,10,50,10,"green", "black");
+            ctx.fillRect(10,50,10,5);
+            ctx.fillRect(10,50,10,5);
+            drawCircle(ctx,10,50,10,"red", "purple");}
     }
 
     function clearDraw(){
@@ -69,4 +62,3 @@
     draw();
 </script>
 </html>
-
