@@ -43,6 +43,13 @@ public class Dessin {
     }
 
 
+    public String toHTMLCanvas(){
+        String res = "";
+        for (Forme f : this.formes){
+            res += "\n\t" + f.toHTMLCanvas();
+        }
+        return res;
+    }
 
 
     @Override
@@ -57,5 +64,7 @@ public class Dessin {
         System.out.println(d);
 
         System.out.println(d.getPerimetre());
+
+        System.out.println(d.toHTMLCanvas());
     }
 }

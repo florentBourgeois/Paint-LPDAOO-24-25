@@ -20,6 +20,15 @@ public class Cercle extends Forme{
         return (int) (this.rayon*2 * Math.PI);
     }
 
+    public String toHTMLCanvas(){
+        String res = "drawCircle(ctx,";
+        res += this.getX() + ",";
+        res += this.getY() + ",";
+        res += this.rayon + ",";
+        res += "\"red\", \"purple\");";
+        return res;
+    }
+
     @Override
     public String toString() {
         return "Cercle{" +

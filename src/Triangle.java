@@ -18,6 +18,15 @@ public class Triangle extends Forme{
         return this.cote*3;
     }
 
+    public String toHTMLCanvas(){
+        String res = "drawEquilateralTriangle(ctx,";
+        res += this.getX() + ",";
+        res += this.getY() + ",";
+        res += this.cote + ",";
+        res += "\"green\", \"black\");";
+        return res;
+    }
+
     @Override
     public String toString() {
         return "Triangle{" +

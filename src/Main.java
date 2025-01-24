@@ -58,5 +58,12 @@ public class Main {
         System.out.println("rectangle : ");
         System.out.println(r.toHTMLCanvas());
         System.out.println(new Rectangle().toHTMLCanvas());
+
+        System.out.println("cercle : ");
+        System.out.println(new Cercle().toHTMLCanvas());
+
+        System.out.println("triangle : ");
+        System.out.println(new Triangle().toHTMLCanvas());
+
     }
 }

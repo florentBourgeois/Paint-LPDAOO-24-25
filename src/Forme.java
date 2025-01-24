@@ -12,6 +12,7 @@ public abstract class Forme {
     }
 
     public abstract int getPerimetre();
+    public abstract String toHTMLCanvas();
 
     public int getX(){
         return this.x;
@@ -37,4 +38,5 @@ public abstract class Forme {
                 ", y=" + y +
                 '}';
     }
+
 }
