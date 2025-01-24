@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+main -> UtilsDrawGenerator : genereRandomDessin(10)
+loop 10 times
+    UtilsDrawGenerator -> UtilsDrawGenerator : créé une forme aleatoire
+    UtilsDrawGenerator -> UtilsDrawGenerator : ajouter la forme dans une liste
+end
+UtilsDrawGenerator -> UtilsDrawGenerator : creer dessin avec la liste de formes
+UtilsDrawGenerator --> main : dessin avec forme
+
+main -> "d:Dessin" : toHTML()
+"d:Dessin" -> "d:Dessin" : initialiser avec debutHTML
+ loop chaque-forme
+    "d:Dessin" -> "f:Forme" : toHTML()
+    "f:Forme" --> "d:Dessin" : html de la forme
+ end
+"d:Dessin" -> "d:Dessin" : ajouter finTHML
+"d:Dessin" --> main : page HTML
+
+main -> UtilsHTML :  writeHTMLToIndex(html)
+
+
+@enduml

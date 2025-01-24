@@ -73,10 +73,9 @@ public class Dessin {
         System.out.println(d.getPerimetre());
 
         System.out.println(d.toHTMLCanvas());
-        UtilsHTML.writeHTMLToIndex(d.toHTMLCanvas());
 
         Dessin random = UtlisDrawGenerator.genereRandomDessin(10000);
-        UtilsHTML.writeHTMLToIndex(random.toHTMLCanvas());
+        System.out.println(random.toHTMLCanvas());
 
 
     }
