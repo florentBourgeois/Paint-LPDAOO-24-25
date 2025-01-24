@@ -36,6 +36,13 @@ public class Dessin {
     }
 
 
+    public void translate(int dx, int dy){
+        for (Forme f : this.formes){
+            f.translate(dx, dy);
+        }
+    }
+
+
     @Override
     public String toString() {
         return "Dessin{" +
