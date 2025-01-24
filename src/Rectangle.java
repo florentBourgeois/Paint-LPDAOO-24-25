@@ -13,6 +13,12 @@ public class Rectangle extends Forme{
         this.longueur = longueur;
     }
 
+    public Rectangle(int largeur, int longueur, int x, int y) {
+        super(x,y);
+        this.longueur = longueur;
+        this.largeur = largeur;
+    }
+
     public void setLongueur(int longueur) {
         this.longueur = longueur;
     }

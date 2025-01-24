@@ -9,6 +9,11 @@ public class Triangle extends Forme{
         this.cote = cote;
     }
 
+    public Triangle(int cote, int x, int y) {
+        super(x,y);
+        this.cote = cote;
+    }
+
     public int getPerimetre(){
         return this.cote*3;
     }
