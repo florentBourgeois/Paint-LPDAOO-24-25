@@ -46,6 +46,14 @@ public class Rectangle extends Forme{
         return (this.largeur + this.longueur)*2;
     }
 
+    public String toHTMLCanvas(){
+        String res = "ctx.fillRect(";
+        res += this.getX() + ",";
+        res += this.getY() + ",";
+        res += this.largeur + ",";
+        res += this.longueur + ");";
+        return res;
+    }
 
 
 }

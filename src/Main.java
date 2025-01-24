@@ -53,5 +53,10 @@ public class Main {
 
         Cercle c2 = new Cercle(5, 1,2);
 
+
+        System.out.println("----------------------\ntoHTML\n------------");
+        System.out.println("rectangle : ");
+        System.out.println(r.toHTMLCanvas());
+        System.out.println(new Rectangle().toHTMLCanvas());
     }
 }
