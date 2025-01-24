@@ -24,6 +24,17 @@ public class Dessin {
         this.formes = formes;
     }
 
+    //calculer périmetre
+    // additionner tous les périmetres de la liste
+    // chercher chaque forme,   lui demander son périmetre,  l'ajouter à total
+    public int getPerimetre(){
+        int total = 0;
+        for (Forme  f : this.formes){
+            total += f.getPerimetre();
+        }
+        return total;
+    }
+
 
     @Override
     public String toString() {
@@ -36,5 +47,6 @@ public class Dessin {
         Dessin d = new Dessin(new Triangle(), new Rectangle(), new Rectangle(), new Cercle());
         System.out.println(d);
 
+        System.out.println(d.getPerimetre());
     }
 }
