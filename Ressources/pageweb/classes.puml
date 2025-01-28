@@ -29,6 +29,12 @@ interface Tag{
   toHTML()
 }
 
+class PageWeb{
+    {final} String header
+    {final} String footer
+    toHTML() : String
+}
+
 Tag <|-- Paragraph
 Tag <|-- Link
 Tag <|-- Title
