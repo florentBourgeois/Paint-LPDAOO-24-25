@@ -43,7 +43,10 @@ public class PageWeb {
         System.out.println(page.toHTML());
         page.addTag(new Title());
         page.addTag(new Img());
+        page.addTag(new Img());
         page.addTag(new Link());
+        page.addTag(new Link("lien vers facebook", "www.facebook.com"));
+
         System.out.println("-----plusieurs tags---------");
         System.out.println(page.toHTML());
 
