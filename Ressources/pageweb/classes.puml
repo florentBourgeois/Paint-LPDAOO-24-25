@@ -1,0 +1,34 @@
+@startuml
+
+
+class Paragraph {
+  - String text
+  toHTML() : String
+}
+
+class Link {
+  - String text
+  - String href
+  toHTML() : String
+}
+
+class Img {
+  - String src
+  - String alt
+  toHTML() : String
+}
+
+class Title {
+  - String text
+  - int lvl
+  toHTML() : String
+}
+
+
+
+class PageWeb {
+  + addTag(Tag)
+  + getHTML() : String
+}
+
+@enduml
