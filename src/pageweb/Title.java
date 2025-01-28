@@ -1,6 +1,6 @@
 package pageweb;
 
-public class Title {
+public class Title implements Tag {
 
     String text = "Hello world";
     int lvl = 1;
@@ -12,6 +12,7 @@ public class Title {
         this.lvl = lvl;
     }
 
+    @Override
     public String toHTML(){
         return "<h"+lvl+">" + this.text + "</h"+lvl+">";
     }

@@ -1,6 +1,6 @@
 package pageweb;
 
-public class Paragraph {
+public class Paragraph implements  Tag {
 
     String text = "Hello world";
 

@@ -1,6 +1,6 @@
 package pageweb;
 
-public class Img {
+public class Img implements  Tag{
 
     String alt = "logo de google";
     String src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";

@@ -1,6 +1,6 @@
 package pageweb;
 
-public class Link {
+public class Link implements  Tag {
 
     String text = "google";
     String href = "www.google.com";

@@ -25,10 +25,14 @@ class Title {
 }
 
 
-
-class PageWeb {
-  + addTag(Tag)
-  + getHTML() : String
+interface Tag{
+  toHTML()
 }
 
+Tag <|-- Paragraph
+Tag <|-- Link
+Tag <|-- Title
+Tag <|-- Img
+
+PageWeb -> Tag : *
 @enduml
