@@ -1,5 +1,7 @@
+package paint;
+
 /**
- * Classe abstraite Forme   qui représente une forme géométrique
+ * Classe abstraite paint.Forme   qui représente une forme géométrique
  * toutes les formes ont une position x et y, un périmètre et une représentation en HTML Canvas et peuvent être déplacées
  */
 public abstract class Forme {
@@ -37,7 +39,7 @@ public abstract class Forme {
 
     @Override
     public String toString() {
-        return "Forme{" +
+        return "paint.Forme{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

@@ -1,3 +1,5 @@
+package paint;
+
 public class Rectangle extends Forme{
 
     private int longueur = 5;

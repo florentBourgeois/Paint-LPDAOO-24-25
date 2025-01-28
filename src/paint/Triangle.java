@@ -1,3 +1,5 @@
+package paint;
+
 public class Triangle extends Forme{
 
     private int cote = 10;
@@ -29,7 +31,7 @@ public class Triangle extends Forme{
 
     @Override
     public String toString() {
-        return "Triangle{" +
+        return "paint.Triangle{" +
                 "cote1=" + cote +
                 "cote2=" + cote +
                 "cote3=" + cote +

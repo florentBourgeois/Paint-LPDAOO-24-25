@@ -1,3 +1,5 @@
+package paint;
+
 public class Cercle extends Forme{
 
     private int rayon = 10;
@@ -31,7 +33,7 @@ public class Cercle extends Forme{
 
     @Override
     public String toString() {
-        return "Cercle{" +
+        return "paint.Cercle{" +
                 "rayon=" + rayon +
                 super.toString()+
                 '}';

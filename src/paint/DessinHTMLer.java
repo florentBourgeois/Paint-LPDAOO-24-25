@@ -1,3 +1,5 @@
+package paint;
+
 public class DessinHTMLer {
     private static final String debutHTML = "<html lang=\"en\">\n" +
             "<body>\n" +

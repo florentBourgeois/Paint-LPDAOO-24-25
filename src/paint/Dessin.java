@@ -1,3 +1,5 @@
+package paint;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +22,7 @@ public class Dessin {
             this.formes.add(formes[i]);
         }
         /*
-        for (Forme forme : formes) {
+        for (paint.Forme forme : formes) {
             this.formes.add(forme);
         } */
     }
@@ -67,7 +69,7 @@ public class Dessin {
     public String toHTMLCanvas(){
         /* cela tue votre ordinateur
         String res = "";
-        for (Forme f : this.formes){
+        for (paint.Forme f : this.formes){
             res += "\n\t" + f.toHTMLCanvas();
         }
         */
@@ -83,7 +85,7 @@ public class Dessin {
 
     @Override
     public String toString() {
-        return "Dessin{" +
+        return "paint.Dessin{" +
                 "formes=" + this.formes +
                 '}';
     }
